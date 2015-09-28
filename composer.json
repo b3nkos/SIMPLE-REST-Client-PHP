@@ -1,0 +1,7 @@
+{
+    "name": "BOTERO/SIMPLE-REST-Client-PHP",
+    "description": "Simple implementation that supports DELETE, GET, POST, PUT and uses cURL",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

@@ -29,6 +29,7 @@ class RESTClient implements RESTClientInterface
 {
     public $status;
     public $response;
+    public $error;
 
     private $_config = array();
     
@@ -41,7 +42,7 @@ class RESTClient implements RESTClientInterface
     
     public function getError() 
     {
-        return curl_error($this->_connection);
+        return $this->error;
     }
 
     public function getHTTPCode()
@@ -128,6 +129,9 @@ class RESTClient implements RESTClientInterface
         $this->setHeader($header, $params);
         $this->request($type, $params);
         $this->process();
+        
+        $this->error = curl_error($this->_connection);
+        
         $this->close();
 
         return $this->status;
