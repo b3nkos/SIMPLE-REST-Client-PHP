@@ -65,7 +65,7 @@ class RESTClient implements RESTClientInterface
         $this->_passwd = $passwd; 
     }
     
-    protected function setConfigurations(array $config) 
+    public function setConfigurations(array $config) 
     {
         $this->_config = $config;
     }
