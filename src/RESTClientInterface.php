@@ -25,7 +25,7 @@
  *
  */
 
-namespace Botero\RESTClient;
+namespace botero\RESTClient;
 
 interface RESTClientInterface {
 
