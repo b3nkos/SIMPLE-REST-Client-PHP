@@ -25,6 +25,8 @@
  *
  */
 
+namespace botero\RESTClient;
+
 class RESTClient implements RESTClientInterface
 {
     public $status;

@@ -25,6 +25,8 @@
  *
  */
 
+namespace botero\RESTClient;
+
 interface RESTClientInterface {
 
     public function delete($url, $header = null);
