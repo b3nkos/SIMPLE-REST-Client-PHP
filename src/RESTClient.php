@@ -113,7 +113,7 @@ class RESTClient implements RESTClientInterface
 
     protected function process()
     {
-        $array = json_decode($this->response);
+        $array = json_decode($this->response, true);
 
         if ($array){
             $this->response = $array;
